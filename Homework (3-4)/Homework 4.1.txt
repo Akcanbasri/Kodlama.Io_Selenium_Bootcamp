@@ -1,0 +1,15 @@
+1) HTML (Hyper Text Markup Language) web sayfalarının oluşturulması için kullanılan standart bir biçimlendirme dilidir. HTML bir program değildir. Chrome, Yandex, Firefox gibi web tarayıcıları tarafından yorumlanarak web sayfalarının görüntülenmesini sağlar. Kısacası HTML web sitelerinin iskeletini oluşturur.
+
+2) HTML Locators, Selenium IDE 'ye hangi web tabanlı sayfada hangi alanlarda çalışacağının yolunu gösteren Komutlardır.
+ID, Name, Class Name, Tag Name, Link Text, Class Selector, XPath gibi HTML Locators vardır.
+
+3)   find element ():  İşlem yapmak istediğimiz alanı bulmamızı sağlar.
+      get (): Belirli bir URL ye gitmek için kullanılır.
+      send_keys (): Bir alana ya da metin kutusuna yazı yazmak için kullanılır.
+      submit (): Bir formu göndermek için kullanılır.
+      clear (): Bir öğenin içeriğini silmek için kullanılır.
+      click (): Bir öğeye "tıklamak" için kullanılır.
+      back (): Bir önceki sayfaya gitmek için kullanılır.
+      forward (): Sonraki sayfaya gitmek için kullanılır.
+      scroll (): Sayfayı aşağı yukarı kaydırmak için kullanılır.
+      refresh (): Sayfayı yenilemek için kullanılır.
