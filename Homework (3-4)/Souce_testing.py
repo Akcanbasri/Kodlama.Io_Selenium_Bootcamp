@@ -86,7 +86,8 @@ class Test_sauce:
         driver.quit()
 
     # Testing empy inputs with red x buttons
-    def test_empty_input_write_x(self):
+    @staticmethod
+    def test_empty_input_write_x():
         driver = webdriver.Chrome()
         driver.maximize_window()
         driver.get("https://www.saucedemo.com/")
