@@ -6,6 +6,7 @@ import pytest
 from datetime import date
 from pathlib import Path
 from selenium.webdriver.common.action_chains import ActionChains
+from Constants import global_constants
 
 
 class Test_sauce:
@@ -13,7 +14,7 @@ class Test_sauce:
     def setup_method(self):
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
-        self.driver.get("https://www.saucedemo.com/")
+        self.driver.get(global_constants.URL)
         self.folder_path = str(date.today())
         Path(self.folder_path).mkdir(exist_ok=True)
 
@@ -181,3 +182,5 @@ class Test_sauce:
         self.driver.save_screenshot(screenshot_file_path)
 
         assert self.driver.current_url == "https://www.saucedemo.com/cart.html"
+
+

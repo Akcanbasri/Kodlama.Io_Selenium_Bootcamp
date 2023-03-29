@@ -5,12 +5,14 @@ from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.action_chains import ActionChains
 from time import sleep
 
+from Constants import global_constants
+
 
 class test_sauce:
     def test_invalid_login(self):
         driver = webdriver.Chrome()
         driver.maximize_window()
-        driver.get("https://www.saucedemo.com/")
+        driver.get(global_constants.URL)
         WebDriverWait(driver, 5).until(ec.visibility_of_element_located((By.ID, "user-name")))
         user_name_input = driver.find_element(By.ID, "user-name")
         password_input = driver.find_element(By.ID, "password")
@@ -25,7 +27,7 @@ class test_sauce:
     def test_valid_login(self):
         driver = webdriver.Chrome()
         driver.maximize_window()
-        driver.get("https://www.saucedemo.com/")
+        driver.get(global_constants.URL)
         WebDriverWait(driver, 5).until(ec.visibility_of_element_located((By.ID, "user-name")))
         user_name_input = driver.find_element(By.ID, "user-name")
         password_input = driver.find_element(By.ID, "password")
